@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ibrahim Khan LLC - E-commerce, dropshipping and digital marketing services.">
+  <title>Ibrahim Khan LLC</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="#home">Ibrahim Khan LLC</a>
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+      <div id="navLinks" class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div>
+        <p class="tag">E-commerce • Dropshipping • Digital Marketing</p>
+        <h1>Grow Your Business Online</h1>
+        <p>Helping businesses build a stronger online presence through e-commerce, dropshipping and digital marketing.</p>
+        <a class="btn" href="#contact">Get in Touch</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Us</h2>
+      <p>Ibrahim Khan LLC focuses on practical digital business solutions, e-commerce and online marketing.</p>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Our Services</h2>
+      <div class="cards">
+        <div class="card"><h3>E-commerce</h3><p>Online store and e-commerce solutions for growing businesses.</p></div>
+        <div class="card"><h3>Dropshipping</h3><p>Product research, sourcing and online selling strategies.</p></div>
+        <div class="card"><h3>Digital Marketing</h3><p>Social media and digital marketing support to reach more customers.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Contact Us</h2>
+      <form onsubmit="sendMessage(event)">
+        <input id="name" type="text" placeholder="Your Name" required>
+        <input id="email" type="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+      <p class="phone">WhatsApp: +92 346 3052653</p>
+    </section>
+  </main>
+
+  <a class="whatsapp" href="https://wa.me/923463052653" target="_blank" rel="noopener">WhatsApp</a>
+
+  <footer>
+    <p>© <span id="year"></span> Ibrahim Khan LLC. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
